@@ -137,7 +137,7 @@ function slideTiles(cells) {
     })
   }
 
-  let startingX, startingY, endingX, endingY;
+let startingX, startingY, endingX, endingY;
 let moving = false;
 function touchstart(evt) {
     startingX = evt.touches[0].clientX;
@@ -154,7 +154,6 @@ function touchend() {
     if ( Math.abs(endingX - startingX) > Math.abs(endingY - startingY) ) {
         if ( endingX > startingX ) touchDirection = "ArrowRight";
         else touchDirection = "ArrowLeft";
-        console.log("left")
         
     } else {
         if ( endingY > startingY ) touchDirection = "ArrowDown";

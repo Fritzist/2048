@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="app.js" type="module"></script>
 </head>
-<body>
+<body ontouchstart="touchstart(evt)", ontouchmove="touchend(evt)", ontouchend="touchend(evt)">
     <button id="button-home" onclick="window.location = 'http://fritzist.tk/';">Homepage</button>
     <button id="restart" onclick="window.location = window.location">Restart</button>
     <div id="game-board"></div>
